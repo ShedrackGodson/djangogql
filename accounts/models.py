@@ -5,6 +5,7 @@ from django.db import models
 
 
 class User(AbstractUser):
+    middle_name = models.CharField(max_length=1024, null=True, blank=True, help_text="The middle name is not required")
     objects = UserManager()
 
     EMAIL_FIELD: str = "username"

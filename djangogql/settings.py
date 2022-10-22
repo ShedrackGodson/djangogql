@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',  # Required for GraphQL Playground
     'accounts.apps.AccountsConfig',
+    'cards.apps.CardsConfig',
+    'decks.apps.DecksConfig',
     'app.apps.AppConfig',
     'graphene_django',
 ]
